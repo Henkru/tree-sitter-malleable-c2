@@ -1,0 +1,131 @@
+========================
+Comments
+========================
+
+# hello
+#
+# hello 123 world
+
+------------------------
+(source_file
+  (comment)
+  (comment)
+  (comment))
+
+========================
+Options
+========================
+
+base64
+prepend
+
+------------------------
+(source_file
+  (option)
+  (option))
+
+========================
+Strings and Numbers
+========================
+
+1
+123
+"Hello"
+"\r\n"
+"\""
+"\u1234"
+"\x12"
+"\\"
+
+------------------------
+(source_file
+  (number)
+  (number)
+  (string)
+  (string
+    (escape_sequence)
+    (escape_sequence))
+  (string
+    (escape_sequence))
+  (string
+    (escape_sequence))
+  (string
+    (escape_sequence))
+  (string
+    (escape_sequence)))
+
+========================
+Block
+========================
+
+{}
+
+------------------------
+(source_file
+  (block_start)
+  (block_end)
+)
+
+
+========================
+Set
+========================
+
+set "sleeptime" "1000";
+
+------------------------
+(source_file
+  (set)
+  (string)
+  (string)
+  (semicolon))
+
+========================
+Block Names
+========================
+
+http-get
+
+------------------------
+(source_file
+  (block_name))
+
+========================
+Complete Block
+========================
+
+http-get {
+        set uri "/foobar"; 
+        client {
+               metadata {
+                       base64;
+                       prepend "user="; #comment
+                       header "Cookie"; # another comment
+               }
+        }
+
+------------------------
+(source_file
+  (block_name)
+  (block_start)
+  (set)
+  (option)
+  (string)
+  (semicolon)
+  (block_name)
+  (block_start)
+  (option)
+  (block_start)
+  (option)
+  (semicolon)
+  (option)
+  (string)
+  (semicolon)
+  (comment)
+  (option)
+  (string)
+  (semicolon)
+  (comment)
+  (block_end)
+  (block_end))
+

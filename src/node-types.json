@@ -1,0 +1,161 @@
+[
+  {
+    "type": "block_name",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "block_end",
+          "named": true
+        },
+        {
+          "type": "block_name",
+          "named": true
+        },
+        {
+          "type": "block_start",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "option",
+          "named": true
+        },
+        {
+          "type": "semicolon",
+          "named": true
+        },
+        {
+          "type": "set",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "string",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "escape_sequence",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "block_end",
+    "named": true
+  },
+  {
+    "type": "block_start",
+    "named": true
+  },
+  {
+    "type": "client",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": true
+  },
+  {
+    "type": "dns-beacon",
+    "named": false
+  },
+  {
+    "type": "escape_sequence",
+    "named": true
+  },
+  {
+    "type": "execute",
+    "named": false
+  },
+  {
+    "type": "http-get",
+    "named": false
+  },
+  {
+    "type": "http-post",
+    "named": false
+  },
+  {
+    "type": "http-stager",
+    "named": false
+  },
+  {
+    "type": "https-certificate",
+    "named": false
+  },
+  {
+    "type": "id",
+    "named": false
+  },
+  {
+    "type": "number",
+    "named": true
+  },
+  {
+    "type": "option",
+    "named": true
+  },
+  {
+    "type": "output",
+    "named": false
+  },
+  {
+    "type": "post-ex",
+    "named": false
+  },
+  {
+    "type": "process-inject",
+    "named": false
+  },
+  {
+    "type": "semicolon",
+    "named": true
+  },
+  {
+    "type": "server",
+    "named": false
+  },
+  {
+    "type": "set",
+    "named": true
+  },
+  {
+    "type": "stage ",
+    "named": false
+  },
+  {
+    "type": "transform-x64",
+    "named": false
+  },
+  {
+    "type": "transform-x86",
+    "named": false
+  }
+]
