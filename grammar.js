@@ -36,6 +36,7 @@ module.exports = grammar({
       'stage ',
       'transform-x64',
       'transform-x86',
+      'metadata',
     ),
 
     option: _ => /[a-zA-Z][\w-]*/,
